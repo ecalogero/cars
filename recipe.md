@@ -141,6 +141,16 @@ tyre4 = car.back_right_tyre()
 
 assert tyre1[0] == fl_tyre
 
+#Given we have a car, we can to be able to view the tread_depth and tyre pressure for each of its wheels.
+
+assert tyre1[0].pressure == 120.05
+assert tyre1[0].tread_depth == 5.1
+assert tyre2[0].pressure == 119.05
+assert tyre2[0].tread_depth == 4.1
+assert tyre3[0].pressure == 118.5
+assert tyre3[0].tread_depth == 4.8
+assert tyre4[0].pressure == 115.05
+assert tyre4[0].tread_depth == 3.1
 
 ```
 
@@ -153,11 +163,10 @@ a more granular level of detail._
 # EXAMPLE
 
 """
-Given a track with a title and an artist
-We see the title reflected in the title property
+Given a car with multiple tyre inspections, when I invoke show tyres, I can view all the tyre inspections and their values, and updated dates, as well as which is the current tyre inspection. 
 """
-track = Track("Carte Blanche", "Veracocha")
-track.title # => "Carte Blanche"
+
+
 ```
 
 _Encode each example as a test. You can add to the above list as you go._
